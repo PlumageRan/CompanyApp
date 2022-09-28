@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Add A New Person</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-item>
+    <ion-label>Name</ion-label>
+    <ion-input [(ngModel)]="data.name" placeholder="Enter Name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Email</ion-label>
+    <ion-input [(ngModel)]="data.email" placeholder="Enter Email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Company ID</ion-label>
+    <ion-input [(ngModel)]="data.companyId" placeholder="Enter Company ID"></ion-input>
+  </ion-item>
+
+
+    <ion-button (click)="submitForm()">Add
+    </ion-button>
+
+</ion-content> 

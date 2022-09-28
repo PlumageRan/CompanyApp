@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>COMPANY</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item button *ngFor="let item of companies" [routerLink]="[item._id]">
+      <ion-label> 
+        {{ item.name }} 
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-button color="primary" [routerLink]="['create']">Add a new comppany</ion-button>
+</ion-content>
+

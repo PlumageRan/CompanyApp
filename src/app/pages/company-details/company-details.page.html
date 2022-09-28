@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>{{ company?.name }}</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/companies"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card *ngIf="company">
+      <ion-card-header>
+        <ion-card-title> {{company.name}} </ion-card-title>
+        <ion-card-subtitle> Address: {{company.address}} </ion-card-subtitle>
+        <ion-card-subtitle> Phone: {{company.phone}} </ion-card-subtitle>
+        <ion-card-subtitle> Revenue: {{company.revenue}} </ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+  <ion-button color="primary" [routerLink]="['people']">Employee List</ion-button>
+</ion-content>
